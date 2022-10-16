@@ -1,0 +1,33 @@
+//zad 7
+
+public static string DecToBin(int dec){
+ 
+string binaryOutput  = String.Empty;
+
+while(dec>0) {
+    binaryOutput = dec%2 + binaryOutput;
+dec /= 2;
+ return binaryOutput;
+}
+}
+Console.WriteLine(DecToBin(jakaś liczba));
+
+
+//zad 6
+
+public static double Potega(double a, double x) {
+       return Math.Pow(a,x);
+}
+
+
+//zad 5
+
+public static int fib(int n)
+{
+for (int i = 0; i <= n; i++){
+if ((n==1)||(n==2))
+return 1;
+else
+return fib(n-1)+fib(n-2);
+}
+}
